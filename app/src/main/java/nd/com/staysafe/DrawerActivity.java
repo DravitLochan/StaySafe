@@ -59,12 +59,8 @@ public class DrawerActivity extends AppCompatActivity {
 
     //This function loads the nth page
     private void defaultFragment() {
-        int n=1;
-        Fragment fragment = new FragmentGenerator();
-        Bundle bundle= new Bundle();
-        bundle.putInt(FragmentGenerator.position,n);
-        fragment.setArguments(bundle);
 
+        Fragment fragment = new Helpline();
         FragmentManager fm = getFragmentManager();
         //TODO: try this with add
         fm.beginTransaction().replace(R.id.content_frame,fragment).commit();
@@ -77,19 +73,29 @@ public class DrawerActivity extends AppCompatActivity {
         }
 
         private void selectItem(int i) {
+            /*
             Fragment fragment = new FragmentGenerator();
             Bundle bundle= new Bundle();
             bundle.putInt(FragmentGenerator.position,i);
             fragment.setArguments(bundle);
+            */
+            Fragment fragment = null;
+            switch(i)
+            {
+                case 0:
+                    fragment = new Helpline();
+                    break;
 
+            }
             FragmentManager fm = getFragmentManager();
             //TODO: try this with add
+            if(fragment!=null)
             fm.beginTransaction().replace(R.id.content_frame,fragment).commit();
 
             drawerLayout.closeDrawer(mListView);
         }
     }
-
+/*
     public static class FragmentGenerator extends Fragment {
         public static String position="position";
         public FragmentGenerator() {
@@ -99,13 +105,13 @@ public class DrawerActivity extends AppCompatActivity {
         @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
+            Fragment fragment=null;
             int activity=0;
             int i=getArguments().getInt(position);
             switch(i)
             {
                 case 0:
-                    activity=R.layout.a;
+                    fragment = new Helpline();
                     break;
                 case 1:
                     activity=R.layout.b;
@@ -117,8 +123,9 @@ public class DrawerActivity extends AppCompatActivity {
                     activity=R.layout.d;
                     break;
             }
-            View fragment = inflater.inflate(activity,container,false);
+            if(fragment==null)
+                fragment = inflater.inflate(activity,container,false);
             return fragment;
         }
-    }
+    }*/
 }
