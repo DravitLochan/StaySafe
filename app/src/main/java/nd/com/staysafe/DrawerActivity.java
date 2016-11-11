@@ -83,9 +83,12 @@ public class DrawerActivity extends AppCompatActivity {
             switch(i)
             {
                 case 0:
-                    fragment = new Helpline();
+                    fragment = new Panic();
                     break;
                 case 1:
+                    fragment = new Helpline();
+                    break;
+                case 2:
                     fragment = new TrustedContacts();
                     break;
 
