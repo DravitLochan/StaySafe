@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="contents">
+        <item>Panic</item>
         <item>Helpline</item>
         <item>Trusted Contacts</item>
         <item>C</item>
-        <item>D</item>
     </array>
 </resources>
