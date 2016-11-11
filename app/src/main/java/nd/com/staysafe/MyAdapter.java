@@ -29,8 +29,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.sViewHolder> {
 
     public void onBindViewHolder(sViewHolder holder, int position) {
         //Log.d("staysafe", position+" ");
-        holder.name.setText(dataset.get(position).name);
-        holder.email.setText(dataset.get(position).email);
+        holder.phonetv.setText(dataset.get(position).phone);
+        //holder.email.setText(dataset.get(position).email);
     }
 
     @Override
@@ -41,12 +41,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.sViewHolder> {
 
     public static class sViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        public TextView name;
-        public TextView email;
+        public TextView phonetv;
         public sViewHolder(View v) {
             super(v);
-            name = (TextView)v.findViewById(R.id.name);
-            email = (TextView)v.findViewById(R.id.email);
+            phonetv = (TextView)v.findViewById(R.id.phonetv);
+
         }
     }
 }
