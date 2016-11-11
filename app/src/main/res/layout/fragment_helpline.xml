@@ -1,13 +1,185 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nd.com.staysafe.Helpline">
+    tools:context="nd.com.staysafe.Helpline"
+    app:layout_collapseParallaxMultiplier="0.9"
+    android:paddingTop="20dp"
+    android:paddingLeft="15dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_height="match_parent"
+            android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show whatever here" />
+        android:weightSum="1">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:text="Women HelpLine Numbers:"
+            android:textSize="32dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Police Control Room : "
+                android:paddingBottom="10dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transport Helpline :"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9604-400-400"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delhi Police Post Box No. :"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5353"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anti-Stalking Number :"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1096"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DTC complaint Number :"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24351763, 9718190047"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DMRC Helpline Number:"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="155370"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24hrs Women Helpline :"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1096"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="National Women Commission  :"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="011 - 26942369, 26944740"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
