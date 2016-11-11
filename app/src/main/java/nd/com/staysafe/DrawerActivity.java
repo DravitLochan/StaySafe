@@ -85,6 +85,9 @@ public class DrawerActivity extends AppCompatActivity {
                 case 0:
                     fragment = new Helpline();
                     break;
+                case 1:
+                    fragment = new TrustedContacts();
+                    break;
 
             }
             FragmentManager fm = getFragmentManager();
